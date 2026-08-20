@@ -25,3 +25,18 @@ Adicionar task com sucesso
     Entao devo ver a tarefa no dashboard
 
     Remove user from database    ${email}
+
+Remover tarefa existente
+    [Tags]     remove-task-exist
+
+    Dado que eu ja tenha efetuado o cadastro
+
+    E que eu esteja na página de tarefas
+
+    E crio uma nova tarefa
+
+    Quando clico no botão de deletar
+
+    E clico no ícone da lixeira
+
+    Então devo ver a página de tarefas vazio

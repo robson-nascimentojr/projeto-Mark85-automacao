@@ -67,3 +67,20 @@ E clico no botao cadastrar
 Entao devo ver a tarefa no dashboard
     Wait For Elements State    css=.task-item    visible    4
     Get Text    css=.task-item strong    equal    ${tarefa}
+
+
+E crio uma nova tarefa
+    Click    .left a button
+    Fill Text    css=.form-input input    ${tarefa}
+    Click    button.sc-Axmtr
+    Get Text    css=.task-item strong    equal    ${tarefa}
+
+Quando clico no botão de deletar
+    Click    button.item-toggle
+
+E clico no ícone da lixeira
+    Click    button.task-remove
+
+Então devo ver a página de tarefas vazio
+    Wait For Elements State    css=.oops p    visible    5
+    Get Text    css=.oops p    equal    Nenhuma tarefa cadastrada
