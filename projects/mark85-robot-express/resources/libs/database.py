@@ -2,7 +2,7 @@ from robot.api.deco import keyword
 from pymongo import MongoClient
 
 client = MongoClient(
-    "mongodb+srv://qa:xperience@cluster0.oibhi7e.mongodb.net/mark85_db?appName=Cluster0")
+    "")
 
 db = client['mark85_db']
 
@@ -22,4 +22,3 @@ def insert_user(name, email, password):
         'password': password
     })
     print('inserting user: ' + name + ' | ' + email)
-
