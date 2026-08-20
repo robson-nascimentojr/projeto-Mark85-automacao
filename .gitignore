@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Environment and local secrets
+.env
+.env.*
+!*.env.example
+
+# Robot Framework and Browser Library reports
+log/
+logs/
+results/
+report.html
+log.html
+output.xml
+playwright-log.txt
+browser/screenshot/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ruby/Bundler local files
+.bundle/
+vendor/bundle/
+
+# Node/npm cache and logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
