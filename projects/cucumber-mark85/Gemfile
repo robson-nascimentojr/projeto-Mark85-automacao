@@ -1,0 +1,14 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+# gem "rails"
+
+
+gem "cucumber", "10.1.1"
+gem "cucumber-core", "15.4.0"
+gem "capybara"
+gem "bcrypt"
+gem "mongo"
+gem "selenium-webdriver"
+gem 'rspec'
