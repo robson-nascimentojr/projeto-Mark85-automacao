@@ -51,7 +51,18 @@ Backend:  http://localhost:3333
 
 ```text
 cucumber-mark85/
-  
+  features/
+      step_definitons/
+            signup.rb
+      support/
+          libs/
+            database.rb
+          pages/
+            signup.page.rb
+          env.rb
+          hooks.hb
+          
+      signup.feature
 
 mark85-robot-express/
   tests/
@@ -95,7 +106,9 @@ mark85-robot-express/
 ## Pré-requisitos
 
 Antes de rodar os testes, instale:
-
+- Ruby 
+- Cucumber
+- Selenium web-driver
 - Node.js
 - Python 3
 - Robot Framework
