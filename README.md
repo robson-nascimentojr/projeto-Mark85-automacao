@@ -1,8 +1,8 @@
-# Mark85 Robot Express
+# Mark85 Robot Express and Cucumber 
 
 Projeto de automação de testes end-to-end para o Mark85, uma aplicação web de gerenciamento de tarefas.
 
-Este repositório foi organizado para validar os principais fluxos de cadastro, login e disponibilidade da aplicação usando Robot Framework, Browser Library e apoio direto no banco MongoDB para preparação de massa de testes.
+Este repositório foi organizado para validar os principais fluxos de cadastro, login e disponibilidade da aplicação usando Robot Framework, Browser Library, Cucumber e selenium web-driver com apoio direto no banco MongoDB para preparação de massa de testes.
 
 ## Créditos e autoria
 
@@ -23,6 +23,7 @@ apps/
     web/                 frontend web do Mark85 servido por Express
 
 projects/
+  cucumber-mark85/ projeto de automação com Cucumber 
   mark85-robot-express/  projeto de automação com Robot Framework
 ```
 
@@ -36,6 +37,8 @@ Backend:  http://localhost:3333
 ## Tecnologias utilizadas
 
 - Robot Framework
+- Cucumber
+- Selenium web-driver 
 - Browser Library, baseada em Playwright
 - Python
 - PyMongo
@@ -47,6 +50,9 @@ Backend:  http://localhost:3333
 ## Estrutura da automação
 
 ```text
+cucumber-mark85/
+  
+
 mark85-robot-express/
   tests/
     online.robot         smoke test para validar se o webapp está online
