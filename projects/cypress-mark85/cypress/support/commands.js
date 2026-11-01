@@ -11,6 +11,10 @@
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('clearUsers', () => cy.task('clearUsers'))
+Cypress.Commands.add('insertUser', (name, email, password) =>
+  cy.task('insertUser', { name, email, password })
+)
 //
 //
 // -- This is a child command --
