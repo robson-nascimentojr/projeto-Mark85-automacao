@@ -28,3 +28,23 @@ Funcionalidade: Cadastro de usuário com sucesso
             |password | pwd123          |
         E clico no botão de cadastro
         Então devo ver uma mensagem de erro "Oops! Já existe uma conta com o e-mail informado."
+
+    Cenário: Cadastro com senha inválida
+        Dado que removo todos os usuários do banco de dados
+        E que estou na página de cadastro
+        Quando preencho o formulário de cadastro com dados inválidos:
+            |name     | Teste Junior    |
+            |email    | teste@gmail.com |
+            |password | 12345           |
+        E clico no botão de cadastro
+        Então devo ver uma mensagem de erro de senha "Informe uma senha com pelo menos 6 digitos"
+    
+    Cenário: cadastro com email inválido
+        Dado que removo todos os usuários do banco de dados
+        E que estou na página de cadastro
+        Quando preencho o formulário de cadastro com dados inválidos:
+            |name     | Teste Junior    |
+            |email    | teste@gmail     |
+            |password | pwd123          |
+        E clico no botão de cadastro
+        Então devo ver uma mensagem de erro de email "Digite um e-mail válido"

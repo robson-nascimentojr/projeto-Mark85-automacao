@@ -29,3 +29,15 @@ Então('devo ver uma mensagem de erro {string}') do |messageError|
   @signup_page.validatioerrorMessageDuplecateEmail
 end
 
+#SENHA COM MENOS DE 6 DIGITOS (LIMITE)
+Quando('preencho o formulário de cadastro com dados inválidos:') do |table|
+  dadosInvalidos = table.rows_hash
+  @signup_page.fillForm(dadosInvalidos)
+end
+Então('devo ver uma mensagem de erro de senha {string}') do |string|
+  @signup_page.validarerrorsenha
+end
+
+Então('devo ver uma mensagem de erro de email {string}') do |string|
+  @signup_page.validarerroremail
+end

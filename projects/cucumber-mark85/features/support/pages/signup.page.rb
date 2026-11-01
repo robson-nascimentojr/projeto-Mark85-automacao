@@ -28,4 +28,14 @@ class SignupPage
         message = find('.notice.error p').text
         expect(message).to eql('Oops! Já existe uma conta com o e-mail informado.')
     end
+
+    def validarerrorsenha
+        message = find('div.alert small.alert-error').text
+        expect(message).to eql('Informe uma senha com pelo menos 6 digitos')
+    end
+
+    def validarerroremail
+        message= find('div.alert small.alert-error').text
+        expect(message).to eql('Digite um e-mail válido')
+    end
 end
