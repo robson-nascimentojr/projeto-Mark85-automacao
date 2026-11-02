@@ -25,6 +25,7 @@ apps/
 projects/
   cucumber-mark85/ projeto de automação com Cucumber 
   mark85-robot-express/  projeto de automação com Robot Framework
+  cypress-mark85/ projeto de automação com cypress
 ```
 
 A automação considera a aplicação rodando localmente nestes endereços:
@@ -46,6 +47,7 @@ Backend:  http://localhost:3333
 - Node.js
 - Express
 - MongoDB Atlas
+- Cypress
 
 ## Estrutura da automação
 
@@ -80,6 +82,18 @@ mark85-robot-express/
   results/               relatórios gerados pelo Robot Framework
   logs/                  logs de execuções anteriores
   browser/               evidências e screenshots geradas durante execuções
+
+cypress-mark85/
+  cypress/
+        e2e/
+            home.cy.js
+            signup.cy.js
+  fixtures/
+        example.json
+  support/
+      commands.js
+      e2e.js
+  cypress.config.js
 ```
 
 ## Cenários cobertos
@@ -114,6 +128,8 @@ Antes de rodar os testes, instale:
 - Robot Framework
 - Browser Library
 - MongoDB Atlas acessível pela aplicação
+- Cypress
+- Yarn
 
 No PowerShell, se o comando `npm` estiver bloqueado por política de execução, use `npm.cmd`.
 
