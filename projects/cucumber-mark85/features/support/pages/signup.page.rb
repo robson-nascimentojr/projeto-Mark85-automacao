@@ -10,9 +10,9 @@ class SignupPage
     end
 
     def fillForm(user_data)
-        find('#name').set(user_data['name'])
-        find('#email').set(user_data['email'])
-        find('#password').set(user_data['password'])
+        find('input#name').set(user_data['name'])
+        find('input#email').set(user_data['email'])
+        find('input#password').set(user_data['password'])
     end
 
     def submitForm
